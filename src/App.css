@@ -1,0 +1,171 @@
+header {
+  background-image: url("./assets/pattern-bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; 
+  padding: 26px 24px 0; 
+  height: 300px; 
+}
+
+header h1 {
+  color: white; 
+  font-size: 26px; 
+  line-height: 1.15;
+  letter-spacing: -0.23px;
+  font-weight: 500; 
+  text-align: center;
+}
+
+form {
+  display: flex; 
+  border-radius: 24px; 
+  overflow: hidden;
+  border: 1px solid white; 
+  align-items: stretch;
+  border: none; 
+  margin: 29px auto 24px; 
+  align-items: center;
+  max-width: 555px;
+}
+
+form input {
+  font-size: 18px; 
+  padding: 18px 24px; 
+  flex-grow: 1;
+  border: none; 
+  outline: none; 
+  color: hsl(0, 0%, 17%); 
+  font-family: "Rubiks" sans-serif;
+}
+
+form button {
+  height: 58px; 
+  width: 58px; 
+  border: none; 
+  outline: none; 
+  background-color: black;
+}
+
+form button:hover {
+  cursor: pointer; 
+}
+
+.user-information {
+  background-color: white;
+  text-align: center;
+  padding: 26px 24px 0; 
+  position: absolute; 
+  top: 167px; 
+  left: 50%; 
+  width: calc(100% - 48px); 
+  transform: translateX(-50%); 
+  z-index: 10; 
+  border-radius: 24px; 
+  max-width: 555px; 
+}
+
+.user-information__topic {
+  padding-bottom: 24px; 
+}
+
+.user-information__property {
+  font-size: 10px; 
+  letter-spacing: 1.75px; 
+  color: hsl(0, 0%, 59%); 
+  font-weight: bold; 
+  padding-bottom: 7px; 
+}
+
+.user-information__value, .error__output-field {
+  font-size: 20; 
+  font-weight: 500; 
+  line-height: 1.2; 
+  letter-spacing: -0.18px; 
+  color: hsl(0, 0%, 17%);
+}
+
+.error__output-field {
+  color: red; 
+}
+
+.map-container {
+  position: relative;
+  z-index: 5; 
+  height: 520px; 
+}
+
+.map-container__error {
+  background-image: url("./assets/city-error-map.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-container, .loading-container {
+  background-color: white;
+  max-width: 555px; 
+  width: 100%; 
+  padding: 37px 32px; 
+  margin: 0 24px; 
+  border-radius: 24px; 
+  color: red; 
+  display: flex; 
+  flex-direction: column;
+  gap: 20px; 
+  text-align: center;
+}
+
+.loading-container {
+  color: hsl(0, 0%, 17%); 
+}
+
+.error-container h2 {
+  font-size: 26px; 
+}
+
+
+
+@media screen and (min-width: 1110px) {
+  header {
+    height: 280px; 
+    padding: 33px; 
+  }
+  header h1 {
+    font-size: 32px; 
+  }
+  form {
+    margin: 31px auto 48px; 
+  }
+  .user-information {
+    display: flex; 
+    padding: 37px 32px; 
+    top: 200px; 
+    max-width: 1110px; 
+  }
+  .user-information__topic {
+    flex-grow: 1; 
+    text-align: start;
+    padding-right: 32px; 
+    padding-bottom: unset; 
+    position: relative; 
+  }
+  .user-information__topic:not(:first-child) {
+    padding-left: 32px; 
+  }
+  .user-information__property {
+    font-size: 12px; 
+    padding-bottom: 13px; 
+  }
+  .user-information__value, .error__output-field {
+    font-size: 26px; 
+  }
+  .user-information__decoration {
+    position: absolute; 
+    width: 1px; 
+    height: 85%; 
+    background-color: hsl(0, 0%, 59%);
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%)
+  }
+}
