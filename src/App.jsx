@@ -18,7 +18,6 @@ function App() {
   }
 
   const apiKey = import.meta.env.VITE_IPIFY_API_KEY; 
-  console.log(import.meta.env.VITE_IPIFY_API_KEY)
 
   useEffect(() => {
     async function getInitialIPAddress() {
